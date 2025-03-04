@@ -9,10 +9,10 @@ if (isset($_GET['id'])) {
     $stmt->execute();
 
     if ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
-        echo "<p><strong>Address:</strong>". htmlspecialchars($row['FIRST_NAME'])."</p>";
-        echo "<p><strong>City:</strong>". htmlspecialchars($row['LAST_NAME'])."</p>";
-        echo "<p><strong>Postal Code:</strong>". htmlspecialchars($row['EMAIL'])."</p>";
-        echo "<p><strong>Country:</strong>". htmlspecialchars($row['ADDRESS'])."</p>";
+        echo "<p><strong>First Name: </strong>". htmlspecialchars($row['FIRST_NAME'])."</p>";
+        echo "<p><strong>Last Name: </strong>". htmlspecialchars($row['LAST_NAME'])."</p>";
+        echo "<p><strong>Email: </strong>". htmlspecialchars($row['EMAIL'])."</p>";
+        echo "<p><strong>Address: </strong>". htmlspecialchars($row['ADDRESS'])."</p>";
     }
     else {
         echo "<p class='text-danger'>Customer not found.</p>";

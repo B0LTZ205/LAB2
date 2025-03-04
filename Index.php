@@ -11,17 +11,6 @@ $stmt->execute();
     <link rel="stylesheet" type="text/css" href="css/datatables.min.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <title>Data Table</title>
-    <style>
-        .dataTables_wrapper .dataTables_filter {
-            float: right !important;
-            text-align: right !important;
-            margin-left: 15px;
-        }
-        .custom-button-container {
-            float: right;
-            margin-bottom: 10px;
-        }
-    </style>
     </head>
     <body>
         <div class="container mt-3">
@@ -81,72 +70,7 @@ $stmt->execute();
 
 
 
-
-<!-- Add Customer Modal -->
-<div class="modal fade" id="AddCustomerModal" tabindex="-1">
-  <div class="modal-dialog">
-    <div class="modal-content">
-
-      <!-- Modal Header -->
-      <div class="modal-header">
-        <h4 class="modal-title">Add Customer</h4>
-        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-      </div>
-      
-      
-
-      <!-- Modal body -->
-      <div class="modal-body">
-        <form id="AddCustomerForm">
-            <div class="form-group mt-2">
-            <label for="AddCustomerName">Customer Name:</label>
-            <input type="text" id="AddCustomerName" class="form-control">
-            <span id="CustomerNameError" class="text-danger"></span>
-        </div>
-        
-            <div class="form-group mt-2">
-                <label for="AddContactName">Contact Name:</label>
-                <input type="text" id="AddContactName" class="form-control">
-                <span id="ContactNameError" class="text-danger"></span>
-            </div>
-            
-            <div class="form-group mt-2">
-                <label for="AddAddress">Address:</label>
-                <input type="text" id="AddAddress" class="form-control">
-                <span id="AddressError" class="text-danger"></span>
-            </div>
-            
-            <div class="form-group mt-2">
-                <label for="AddCity">City:</label>
-                <input type="text" id="AddCity" class="form-control">
-                <span id="CityError" class="text-danger"></span>
-            </div>
-            
-            <div class="form-group mt-2">
-                <label for="AddPostalCode">Postal Code:</label>
-                <input type="text" id="AddPostalCode" class="form-control">
-                <span id="PostalCodeError" class="text-danger"></span>
-            </div>
-            
-            <div class="form-group mt-2">
-                <label for="AddCountry">Country:</label>
-                <input type="text" id="AddCountry" class="form-control">
-                <span id="CountryError" class="text-danger"></span>
-            </div>
-
-            <div class="form-group mt-2 d-flex justify-content-center">
-            <button class="btn btn-primary">Add</button>
-            <button class="btn btn-danger ms-2" data-bs-dismiss="modal">Cancel</button>
-
-            
-
-        
-
-        </form>
-      </div>
-    </div>
-  </div>
-</div>
+ 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="js/FetchCustomerDetails.js"></script>
         <script src="js/jquery.min.js"></script>
