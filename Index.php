@@ -49,9 +49,8 @@ $stmt->execute();
         </table>
     </div>
 
-
-<!-- read Customer Modal -->
-<div class="modal fade" id="readCustomerModal" tabindex="-1">
+    <!-- read Customer Modal -->
+ <div class="modal fade" id="readCustomerModal" tabindex="-1">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
@@ -70,7 +69,6 @@ $stmt->execute();
 
 
 
- 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="js/FetchCustomerDetails.js"></script>
         <script src="js/jquery.min.js"></script>
