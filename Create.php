@@ -39,11 +39,11 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
 
   // Validate input fields
 if(!validateInput($FIRST_NAME, $pattern['FIRST_NAME'])) {
-  $errors['FIRST_NAME'] = "Invalid FIRST_NAME (Letters, numbers, spaces, ',', '#' '.', '-').";
+  $errors['FIRST_NAME'] = "Invalid First Name (Only alphabetic characters and spaces allowed Max 100 characters).";
 }
 
 if(!validateInput($LAST_NAME, $pattern['LAST_NAME'])) {
-  $errors['LAST_NAME'] = "Invalid LAST_NAME (Only alphabetic characters and spaces allowed Max 100 characters).";
+  $errors['LAST_NAME'] = "Invalid Last Name (Only alphabetic characters and spaces allowed Max 100 characters).";
 }
 
 if(!validateInput($EMAIL, $pattern['EMAIL'])) {

@@ -16,13 +16,13 @@ $stmt->execute();
         <div class="container mt-3">
             <table class="table table-stripped text-center mt-3">
             <thead>                <tr>
-                    <th>CUSTOMER_ID</th>
-                    <th>STORE_ID</th>
-                    <th>FIRST_NAME</th>
-                    <th>LAST_NAME</th>
-                    <th>EMAIL</th>
-                    <th>ADDRESS</th>
-                    <th>Action</th>
+                    <th>CustomerID</th>
+                    <th>StoreID</th>
+                    <th>FirstName</th>
+                    <th>LastName</th>
+                    <th class="text-center">Email</th>
+                    <th class="text-center">Address</th>
+                    <th class="text-center">Action</th>
                 </tr>
             </thead>
             <tbody>
